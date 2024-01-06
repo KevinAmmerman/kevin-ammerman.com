@@ -29,7 +29,7 @@ export class ProjectComponent {
     {
       name: 'DA-Bubble',
       technologies: 'Angular | TypeScript | Firebase | HTML | SCSS',
-      description: 'Chat messanger inspired by Slack. Contact your colleagues and exchange ideas with them.',
+      description: 'Chat messenger inspired by Slack. Contact your colleagues and exchange ideas with them.',
       image: 'da-bubble.png',
       animation: 'fade-right',
       github: 'https://github.com/KevinAmmerman/DA-Bubble',
