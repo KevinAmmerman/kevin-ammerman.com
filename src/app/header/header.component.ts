@@ -10,13 +10,16 @@ export class HeaderComponent {
   activeSection: string = '';
   menuOpen: boolean = false;
 
+  
   ngOnInit() {
     this.menuEventListener();
   }
 
+
   openMenu() {
     this.menuOpen = !this.menuOpen;
   }
+
 
   menuEventListener() {
     const menu = document.querySelectorAll('a.nav_link');
@@ -29,12 +32,14 @@ export class HeaderComponent {
     });
   }
 
+
   resetMenuActive() {
     const menu = document.querySelectorAll('a.nav_link');
     menu.forEach(link => {
       link.classList.remove('active');
     });
   }
+
 
   @HostListener('window:scroll')
   onWindowScroll() {
@@ -51,6 +56,7 @@ export class HeaderComponent {
       if (contact < 855 && contact > 19) this.activeSection = 'contact';
     }
   }
+
 
   checkIfElementsExist() {
     const home = document.getElementById('home');
