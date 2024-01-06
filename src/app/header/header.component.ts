@@ -38,15 +38,30 @@ export class HeaderComponent {
 
   @HostListener('window:scroll')
   onWindowScroll() {
-    const home = document.getElementById('home')!.getBoundingClientRect().top;
-    const about = document.getElementById('about_me')!.getBoundingClientRect().top;
-    const skills = document.getElementById('skills')!.getBoundingClientRect().top;
-    const portfolio = document.getElementById('portfolio')!.getBoundingClientRect().top;
-    const contact = document.getElementById('contact')!.getBoundingClientRect().top;
-    if (home <= 0 && home > -164) this.activeSection = '';
-    if (about < 663 && about > -53) this.activeSection = 'about';
-    if (skills < 585 && skills > 86) this.activeSection = 'skills';
-    if (portfolio < 769 && portfolio > -500) this.activeSection = 'portfolio';
-    if (contact < 855 && contact > 19) this.activeSection = 'contact';
+    if (this.checkIfElementsExist()) {
+      const home = document.getElementById('home')!.getBoundingClientRect().top;
+      const about = document.getElementById('about_me')!.getBoundingClientRect().top;
+      const skills = document.getElementById('skills')!.getBoundingClientRect().top;
+      const portfolio = document.getElementById('portfolio')!.getBoundingClientRect().top;
+      const contact = document.getElementById('contact')!.getBoundingClientRect().top;
+      if (home <= 0 && home > -164) this.activeSection = '';
+      if (about < 663 && about > -53) this.activeSection = 'about';
+      if (skills < 585 && skills > 86) this.activeSection = 'skills';
+      if (portfolio < 769 && portfolio > -500) this.activeSection = 'portfolio';
+      if (contact < 855 && contact > 19) this.activeSection = 'contact';
+    }
+  }
+
+  checkIfElementsExist() {
+    const home = document.getElementById('home');
+    const about = document.getElementById('about_me');
+    const skills = document.getElementById('skills');
+    const portfolio = document.getElementById('portfolio');
+    const contact = document.getElementById('contact');
+    if (home && about && skills && portfolio && contact) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
