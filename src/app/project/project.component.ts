@@ -9,13 +9,13 @@ export class ProjectComponent {
 
   projects: any = [
     {
-      name: 'Join',
-      technologies: 'JavaScript | HTML | CSS',
-      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      image: 'join.png',
+      name: 'DA-Bubble',
+      technologies: 'Angular | TypeScript | Firebase | HTML | SCSS',
+      description: 'Chat messenger inspired by Slack. Contact your colleagues and exchange ideas with them.',
+      image: 'da-bubble.png',
       animation: 'fade-right',
-      github: 'https://github.com/KevinAmmerman/Join',
-      live: 'https://join.kevin-ammerman.com/'
+      github: 'https://github.com/KevinAmmerman/DA-Bubble',
+      live: 'https://da-bubble.kevin-ammerman.com/'
     },
     {
       name: 'El Polo Locco',
@@ -26,14 +26,15 @@ export class ProjectComponent {
       github: 'https://github.com/KevinAmmerman/el_pollo_locco',
       live: 'https://el-pollo-loco.kevin-ammerman.com/'
     },
+
     {
-      name: 'DA-Bubble',
-      technologies: 'Angular | TypeScript | Firebase | HTML | SCSS',
-      description: 'Chat messenger inspired by Slack. Contact your colleagues and exchange ideas with them.',
-      image: 'da-bubble.png',
+      name: 'Join',
+      technologies: 'JavaScript | HTML | CSS',
+      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      image: 'join.png',
       animation: 'fade-right',
-      github: 'https://github.com/KevinAmmerman/DA-Bubble',
-      live: 'https://da-bubble.kevin-ammerman.com/'
+      github: 'https://github.com/KevinAmmerman/Join',
+      live: 'https://join.kevin-ammerman.com/'
     }
   ]
 }

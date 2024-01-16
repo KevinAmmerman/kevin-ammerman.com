@@ -47,6 +47,13 @@ section {
     }
 }
 
+.about_me_box {
+
+    p{
+      max-width: 900px;  
+    }
+}
+
 .picture_container {
     display: flex;
     width: 35vw;
@@ -91,7 +98,7 @@ section {
     display: flex;
     align-items: center;
     gap: 35px;
-    width: 80%;
+    width: 60%;
 
     img {
         width: 50px;

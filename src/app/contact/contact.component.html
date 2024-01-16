@@ -21,11 +21,11 @@
                     <label for="name"></label>
                     <input [class.disabled]="isSent" id="name" formControlName="name" data-aos="flip-down"
                         data-aos-duration="800" data-aos-delay="200" data-aos-once="true" type="text"
-                        placeholder="Your name" [class.error-border]="contactForm.get('name')?.invalid && isSubmited"
+                        placeholder="First & Lastname" [class.error-border]="contactForm.get('name')?.invalid && isSubmited"
                         [class.success-border]="contactForm.get('name')?.valid">
                     <div class="error_box">
                         <small
-                            *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.errors?.['required'] || contactForm.get('name')?.invalid &&  !isSent && isSubmited">Please
+                            *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.errors?.['required'] || contactForm.get('name')?.invalid && !isSent && isSubmited">Please
                             enter your name.</small>
                     </div>
                 </div>
