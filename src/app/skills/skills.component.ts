@@ -39,7 +39,7 @@ export class SkillsComponent {
       animation: 'fade-left'
     },
     {
-      name: 'Css',
+      name: 'CSS',
       icon: 'css.png',
       animation: 'fade-right'
     },
@@ -54,7 +54,7 @@ export class SkillsComponent {
       animation: 'fade-right'
     },
     {
-      name: 'Material design',
+      name: 'Material Design',
       icon: 'material_design.png',
       animation: 'fade-left'
     }

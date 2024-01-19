@@ -18,9 +18,9 @@ export class ProjectComponent {
       live: 'https://da-bubble.kevin-ammerman.com/'
     },
     {
-      name: 'El Polo Locco',
+      name: 'El Polo Loco',
       technologies: 'JavaScript | HTML | CSS | OOP',
-      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and Tabasco salsa to fight against the crazy hen.',
       image: 'el_pollo_loco.png',
       animation: 'fade-left',
       github: 'https://github.com/KevinAmmerman/el_pollo_locco',
@@ -30,7 +30,7 @@ export class ProjectComponent {
     {
       name: 'Join',
       technologies: 'JavaScript | HTML | CSS',
-      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions; assign users and categories.',
       image: 'join.png',
       animation: 'fade-right',
       github: 'https://github.com/KevinAmmerman/Join',

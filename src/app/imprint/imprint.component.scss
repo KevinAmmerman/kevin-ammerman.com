@@ -2,8 +2,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 154px);
+    height: 100svh;
     padding: 0 150px;
+    
 
     @media (max-width: 1150px) {
         padding: 0 75px;

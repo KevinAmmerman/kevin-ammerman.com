@@ -8,20 +8,20 @@
         </div>
         <div class="contact_container">
             <div class="contact_contant">
-                <span>Got a problem to solve?</span>
-                <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to
-                    your
-                    projects with my work.
+                <span>Ready to Create?</span>
+                <p>
+                    Reach out to me using the form to kickstart our collaboration! Whether you have a specific project
+                    in mind, want to discuss ideas, or simply have a question, I'm here to help. Looking forward to
+                    hearing from you!
                 </p>
-                <span>Need a Frontend developer?<b> Contact me!</b></span>
-                <a href="mailto:contact@kevin-ammerman.com">contact@kevin-ammerman.com</a>
             </div>
             <form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
                 <div class="form_row">
                     <label for="name"></label>
                     <input [class.disabled]="isSent" id="name" formControlName="name" data-aos="flip-down"
                         data-aos-duration="800" data-aos-delay="200" data-aos-once="true" type="text"
-                        placeholder="First & Lastname" [class.error-border]="contactForm.get('name')?.invalid && isSubmited"
+                        placeholder="First & Last Name"
+                        [class.error-border]="contactForm.get('name')?.invalid && isSubmited"
                         [class.success-border]="contactForm.get('name')?.valid">
                     <div class="error_box">
                         <small
@@ -33,7 +33,7 @@
                     <label for="email"></label>
                     <input [class.disabled]="isSent" id="email" formControlName="email" data-aos="flip-down"
                         data-aos-duration="800" data-aos-delay="300" data-aos-once="true" type="email"
-                        placeholder="Your email" [class.error-border]="contactForm.get('email')?.invalid && isSubmited"
+                        placeholder="Your Email" [class.error-border]="contactForm.get('email')?.invalid && isSubmited"
                         [class.success-border]="contactForm.get('email')?.valid">
                     <div class="error_box">
                         <small
@@ -47,28 +47,32 @@
                 <div class="form_row">
                     <label for="text"></label>
                     <textarea [class.disabled]="isSent" id="text" formControlName="text" data-aos="flip-down"
-                        data-aos-duration="800" data-aos-delay="400" data-aos-once="true" placeholder="Your message"
-                        name="message" id="message" cols="30" rows="10" [class.error-border]="contactForm.get('text')?.invalid && isSubmited"
+                        data-aos-duration="800" data-aos-delay="400" data-aos-once="true" placeholder="Your Message"
+                        name="message" id="message" cols="30" rows="10"
+                        [class.error-border]="contactForm.get('text')?.invalid && isSubmited"
                         [class.success-border]="contactForm.get('text')?.valid"></textarea>
-                        <div class="error_box">
-                            <small
-                                *ngIf="contactForm.get('text')?.touched && contactForm.get('text')?.errors?.['required'] || contactForm.get('text')?.invalid && !isSent && isSubmited">Please
-                                enter a message.</small>
-                        </div>
+                    <div class="error_box">
+                        <small
+                            *ngIf="contactForm.get('text')?.touched && contactForm.get('text')?.errors?.['required'] || contactForm.get('text')?.invalid && !isSent && isSubmited">Please
+                            enter a message.</small>
+                    </div>
                 </div>
-                <div class="privacy-box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400" data-aos-once="true">
+                <div class="privacy-box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400"
+                    data-aos-once="true">
                     <div class="cbx">
-                        <input formControlName="privacy" id="cbx" type="checkbox"/>
+                        <input formControlName="privacy" id="cbx" type="checkbox" />
                         <label for="cbx"></label>
                         <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
-                          <path d="M2 8.36364L6.23077 12L13 2"></path>
+                            <path d="M2 8.36364L6.23077 12L13 2"></path>
                         </svg>
-                      </div>
-                    <span [class.error-border]="!contactForm.get('privacy')?.value && isSubmited">I've read the <a routerLink="privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.</span>
+                    </div>
+                    <span [class.error-border]="!contactForm.get('privacy')?.value && isSubmited">I've read the <a
+                            routerLink="privacy-policy">privacy policy</a> and agree to the processing of my data as
+                        outlined.</span>
                 </div>
                 <div class="btn_box">
-                    <button type="submit" [disabled]="isSent" data-aos="flip-down"
-                        data-aos-duration="800" data-aos-delay="500" data-aos-once="true">{{ message }}</button>
+                    <button type="submit" [disabled]="isSent" data-aos="flip-down" data-aos-duration="800"
+                        data-aos-delay="500" data-aos-once="true">{{ message }}</button>
                 </div>
                 <div [class.dNone]="!isSent" class="container_animation">
                     <div class="box">
